@@ -1,0 +1,254 @@
+﻿C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\agent\AgentDashboard.jsx:38: addToast,
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\agent\AgentDashboard.jsx:87: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\agent\AgentDashboard.jsx:88: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\agent\AgentDashboard.jsx:93: addToast({ type: 'error', title: 'Error', message: 'Failed to update property status.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\AdminLoginPage.jsx:23: const { setCurrentUser, addToast } = useApp();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\AdminLoginPage.jsx:52: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\AdminLoginPage.jsx:53: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\AgentLoginPage.jsx:22: const { setCurrentUser, addToast } = useApp();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\AgentLoginPage.jsx:50: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\AgentLoginPage.jsx:51: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\CustomerLoginPage.jsx:27: const { setCurrentUser, addToast } = useApp();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\CustomerLoginPage.jsx:68: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\CustomerLoginPage.jsx:69: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\CustomerLoginPage.jsx:102: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\CustomerLoginPage.jsx:103: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\auth\ForgotPasswordModal.jsx:24: setStatus({ type: 'success', message: res.message });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\bookings\BookingModal.jsx:13: addToast,
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\bookings\MyBookingsModal.jsx:163: For modifications or cancellations, contact our concierge line at +1 (800) 555-LUXE
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\Footer.jsx:6: const { setActiveTab, addToast } = useApp();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:8: const { supabaseModalOpen, setSupabaseModalOpen, addToast, refreshData } = useApp();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:11: const [url, setUrl] = useState(localStorage.getItem('custom_supabase_url') || '');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:12: const [anonKey, setAnonKey] = useState(localStorage.getItem('custom_supabase_anon_key') || '');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:19: localStorage.setItem('custom_supabase_url', url.trim());
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:20: localStorage.setItem('custom_supabase_anon_key', anonKey.trim());
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:21: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:22: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:27: localStorage.removeItem('custom_supabase_url');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:28: localStorage.removeItem('custom_supabase_anon_key');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:29: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:76: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:77: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal.jsx:84: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:7: const { supabaseModalOpen, setSupabaseModalOpen, addToast, refreshData } = useApp();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:10: const [url, setUrl] = useState(localStorage.getItem('custom_supabase_url') || '');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:11: const [anonKey, setAnonKey] = useState(localStorage.getItem('custom_supabase_anon_key') || '');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:18: localStorage.setItem('custom_supabase_url', url.trim());
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:19: localStorage.setItem('custom_supabase_anon_key', anonKey.trim());
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:20: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:21: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:26: localStorage.removeItem('custom_supabase_url');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:27: localStorage.removeItem('custom_supabase_anon_key');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:28: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:40: properties: JSON.parse(localStorage.getItem('lux_properties') || '[]'),
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:41: owners: JSON.parse(localStorage.getItem('lux_owners') || '[]'),
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:42: agents: JSON.parse(localStorage.getItem('lux_agents') || '[]'),
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:43: customers: JSON.parse(localStorage.getItem('lux_customers') || '[]'),
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:44: bookings: JSON.parse(localStorage.getItem('lux_bookings') || '[]'),
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:56: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\SupabaseSettingsModal_before_export_fix.jsx:57: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\ThemeSelector.jsx:9: subtitle: 'British & Beverly Hills Prestige',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\ThemeSelector.jsx:44: const { currentTheme, changeTheme, addToast } = useApp();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\ThemeSelector.jsx:62: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\common\ThemeSelector.jsx:63: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\customer\CustomerDashboard.jsx:40: addToast,
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\customer\CustomerDashboard.jsx:61: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\customer\CustomerDashboard.jsx:81: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\customer\CustomerDashboard.jsx:82: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\home\ContactSection.jsx:6: const { addToast } = useApp();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\home\ContactSection.jsx:18: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\home\ContactSection.jsx:26: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\home\ContactSection.jsx:27: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\home\HomePage.jsx:7: import { TestimonialsSection } from './TestimonialsSection';
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\home\HomePage.jsx:30: {/* 6. Customer Testimonials Section */}
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\home\HomePage.jsx:31: <TestimonialsSection />
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\home\TestimonialsSection.jsx:4: export const TestimonialsSection = () => {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\home\TestimonialsSection.jsx:26: Customer testimonials will be displayed here after genuine reviews are received.
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\owners\OwnerFormModal.jsx:146: placeholder="9405 Wilshire Blvd, Beverly Hills, CA"
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\properties\PropertyFormModal.jsx:8: { label: 'Manhattan Skyline Penthouse', url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80' },
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\properties\PropertyFormModal.jsx:9: { label: 'Beverly Hills Modern Mansion', url: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80' },
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\properties\PropertyFormModal.jsx:194: placeholder="e.g. Miami Beach, FL"
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\components\properties\PropertyFormModal.jsx:206: placeholder="e.g. 442 Biscayne Island Drive, Miami Beach, FL 33139"
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:9: const DEMO_USERS = {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:72: return localStorage.getItem('lux_theme') || 'emerald';
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:78: localStorage.setItem('lux_theme', themeId);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:98: // This fixes the case where a stale localStorage role differs from the DB role.
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:136: const addToast = useCallback((toast) => {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:168: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:176: }, [addToast]);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:186: localStorage.setItem('lux_current_user', JSON.stringify(currentUser));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:188: localStorage.removeItem('lux_current_user');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:197: if (DEMO_USERS[role]) {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:198: setCurrentUser(DEMO_USERS[role]);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:199: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:200: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:202: message: `Logged in as ${DEMO_USERS[role].name}`,
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:210: setCurrentUser(DEMO_USERS.admin);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:223: setCurrentUser(DEMO_USERS.agent);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:249: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:250: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:277: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:278: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:284: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:295: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:308: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:309: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:315: addToast({ type: 'error', title: 'Error', message: 'Failed to add property.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:324: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:325: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:331: addToast({ type: 'error', title: 'Error', message: 'Failed to update property.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:340: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:346: addToast({ type: 'error', title: 'Error', message: 'Failed to delete property.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:356: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:357: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:363: addToast({ type: 'error', title: 'Error', message: 'Failed to add owner.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:372: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:373: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:379: addToast({ type: 'error', title: 'Error', message: 'Failed to update owner.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:388: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:394: addToast({ type: 'error', title: 'Error', message: 'Failed to delete owner.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:404: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:405: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:411: addToast({ type: 'error', title: 'Error', message: 'Failed to add agent.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:420: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:421: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:427: addToast({ type: 'error', title: 'Error', message: 'Failed to update agent.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:436: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:442: addToast({ type: 'error', title: 'Error', message: 'Failed to delete agent.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:452: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:453: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:459: addToast({ type: 'error', title: 'Error', message: 'Failed to add customer.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:468: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:469: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:475: addToast({ type: 'error', title: 'Error', message: 'Failed to update customer.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:484: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:490: addToast({ type: 'error', title: 'Error', message: 'Failed to delete customer.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:500: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:501: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:507: addToast({ type: 'error', title: 'Error', message: 'Failed to submit booking request.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:519: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:520: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:526: addToast({ type: 'error', title: 'Error', message: 'Failed to update booking status.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:535: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:541: addToast({ type: 'error', title: 'Error', message: 'Failed to cancel booking.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:549: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:569: DEMO_USERS,
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.before-auth-cleanup.jsx:597: addToast,
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:45: return localStorage.getItem('lux_theme') || 'emerald';
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:51: localStorage.setItem('lux_theme', themeId);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:71: // This fixes the case where a stale localStorage role differs from the DB role.
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:109: const addToast = useCallback((toast) => {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:141: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:149: }, [addToast]);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:159: localStorage.setItem('lux_current_user', JSON.stringify(currentUser));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:161: localStorage.removeItem('lux_current_user');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:176: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:177: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:184: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:199: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:200: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:210: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:211: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:218: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:229: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:242: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:243: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:249: addToast({ type: 'error', title: 'Error', message: 'Failed to add property.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:258: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:259: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:265: addToast({ type: 'error', title: 'Error', message: 'Failed to update property.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:274: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:280: addToast({ type: 'error', title: 'Error', message: 'Failed to delete property.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:290: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:291: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:297: addToast({ type: 'error', title: 'Error', message: 'Failed to add owner.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:306: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:307: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:313: addToast({ type: 'error', title: 'Error', message: 'Failed to update owner.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:322: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:328: addToast({ type: 'error', title: 'Error', message: 'Failed to delete owner.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:338: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:339: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:345: addToast({ type: 'error', title: 'Error', message: 'Failed to add agent.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:354: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:355: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:361: addToast({ type: 'error', title: 'Error', message: 'Failed to update agent.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:370: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:376: addToast({ type: 'error', title: 'Error', message: 'Failed to delete agent.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:386: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:387: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:393: addToast({ type: 'error', title: 'Error', message: 'Failed to add customer.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:402: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:403: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:409: addToast({ type: 'error', title: 'Error', message: 'Failed to update customer.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:418: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:424: addToast({ type: 'error', title: 'Error', message: 'Failed to delete customer.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:434: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:435: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:441: addToast({ type: 'error', title: 'Error', message: 'Failed to submit booking request.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:453: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:454: type: 'success',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:460: addToast({ type: 'error', title: 'Error', message: 'Failed to update booking status.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:469: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:475: addToast({ type: 'error', title: 'Error', message: 'Failed to cancel booking.' });
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:481: addToast({
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\context\AppContext.jsx:526: addToast,
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:137: localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(authenticatedUser));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:215: localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(registeredUser));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:242: * Get current user from localStorage (synchronous, used for initial render).
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:248: const raw = localStorage.getItem(CURRENT_USER_KEY);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:268: // No valid Supabase session â€” clear any stale localStorage user
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:269: localStorage.removeItem(CURRENT_USER_KEY);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:280: localStorage.removeItem(CURRENT_USER_KEY);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:300: localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(refreshedUser));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:303: // Network or unexpected error â€” keep existing localStorage user to avoid
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:322: localStorage.removeItem(CURRENT_USER_KEY);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:328: const raw = localStorage.getItem(`${FAVORITES_KEY}_${customerId}`);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\authService.js:344: localStorage.setItem(`${FAVORITES_KEY}_${customerId}`, JSON.stringify(updated));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService.js:255: const fileName = `${Date.now()}-${Math.random().toString(36).substring(2)}.${fileExt}`;
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:8: } from './mockData';
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:19: // Initialize localStorage with realistic mock data if empty
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:20: export const initializeLocalStorage = () => {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:21: if (!localStorage.getItem(STORAGE_KEYS.PROPERTIES)) {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:22: localStorage.setItem(STORAGE_KEYS.PROPERTIES, JSON.stringify(INITIAL_PROPERTIES));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:24: if (!localStorage.getItem(STORAGE_KEYS.OWNERS)) {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:25: localStorage.setItem(STORAGE_KEYS.OWNERS, JSON.stringify(INITIAL_OWNERS));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:27: if (!localStorage.getItem(STORAGE_KEYS.AGENTS)) {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:28: localStorage.setItem(STORAGE_KEYS.AGENTS, JSON.stringify(INITIAL_AGENTS));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:30: if (!localStorage.getItem(STORAGE_KEYS.CUSTOMERS)) {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:31: localStorage.setItem(STORAGE_KEYS.CUSTOMERS, JSON.stringify(INITIAL_CUSTOMERS));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:33: if (!localStorage.getItem(STORAGE_KEYS.BOOKINGS)) {
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:34: localStorage.setItem(STORAGE_KEYS.BOOKINGS, JSON.stringify(INITIAL_BOOKINGS));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:41: const data = localStorage.getItem(key);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:50: localStorage.setItem(key, JSON.stringify(data));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:52: console.error('Failed to save to localStorage:', err);
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:72: initializeLocalStorage();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:153: initializeLocalStorage();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:229: initializeLocalStorage();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:307: initializeLocalStorage();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:379: initializeLocalStorage();
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:455: const fileName = `${Date.now()}-${Math.random().toString(36).substring(2)}.${fileExt}`;
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:487: localStorage.setItem(STORAGE_KEYS.PROPERTIES, JSON.stringify(INITIAL_PROPERTIES));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:488: localStorage.setItem(STORAGE_KEYS.OWNERS, JSON.stringify(INITIAL_OWNERS));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:489: localStorage.setItem(STORAGE_KEYS.AGENTS, JSON.stringify(INITIAL_AGENTS));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:490: localStorage.setItem(STORAGE_KEYS.CUSTOMERS, JSON.stringify(INITIAL_CUSTOMERS));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\dataService_backup.js:491: localStorage.setItem(STORAGE_KEYS.BOOKINGS, JSON.stringify(INITIAL_BOOKINGS));
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:7: address: '9405 Wilshire Blvd, Beverly Hills, CA 90212',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:17: notes: 'Specializes in high-rise penthouses and luxury Manhattan assets.',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:51: bio: 'Recognized as one of Beverly Hills top luxury realtors with over $350M in career volume.',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:64: bio: 'Metropolitan real estate consultant focusing on premier Manhattan developments.',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:97: id: 'prop-1',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:99: location: 'Miami Beach, FL',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:100: address: '442 Biscayne Island Drive, Miami Beach, FL 33139',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:119: location: 'Manhattan, New York, NY',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:139: location: 'Beverly Hills, CA',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:219: location: 'Scottsdale, AZ',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:220: address: '11020 E Pinnacle Peak Rd, Scottsdale, AZ 85262',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:239: location: 'Manhattan, New York, NY',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:285: interested_property_id: 'prop-1',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:332: property_id: 'prop-1',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\mockData.js:406: property_id: 'prop-1',
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\supabaseClient.js:3: // Read from environment variables or custom localStorage overrides
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\supabaseClient.js:5: const customUrl = localStorage.getItem('custom_supabase_url');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\services\supabaseClient.js:6: const customKey = localStorage.getItem('custom_supabase_anon_key');
+C:\Users\Keshav Bhardwaj\.gemini\antigravity\scratch\real-estate-system\src\utils\formatters.js:33: return `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).substr(2, 5)}`;

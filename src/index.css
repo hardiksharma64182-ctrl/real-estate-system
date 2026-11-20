@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@theme {
+  --color-amber-50: var(--theme-accent-50);
+  --color-amber-100: var(--theme-accent-100);
+  --color-amber-200: var(--theme-accent-200);
+  --color-amber-300: var(--theme-accent-300);
+  --color-amber-400: var(--theme-accent-400);
+  --color-amber-500: var(--theme-accent-500);
+  --color-amber-600: var(--theme-accent-600);
+  --color-amber-700: var(--theme-accent-700);
+  --color-amber-800: var(--theme-accent-800);
+  --color-amber-900: var(--theme-accent-900);
+
+  --color-slate-800: var(--theme-primary-800);
+  --color-slate-900: var(--theme-primary-900);
+  --color-slate-950: var(--theme-primary-950);
+}
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Default Theme: Prestigious Emerald & Champagne Gold */
+  --theme-primary-950: #022018;
+  --theme-primary-900: #064030;
+  --theme-primary-800: #0a523f;
+  
+  --theme-accent-50: #fefce8;
+  --theme-accent-100: #fef9c3;
+  --theme-accent-200: #fef08a;
+  --theme-accent-300: #fde047;
+  --theme-accent-400: #facc15;
+  --theme-accent-500: #eab308;
+  --theme-accent-600: #ca8a04;
+  --theme-accent-700: #a16207;
+  --theme-accent-800: #854d0e;
+  --theme-accent-900: #713f12;
+}
+
+/* 1. Emerald & Champagne Gold */
+[data-theme="emerald"] {
+  --theme-primary-950: #022018;
+  --theme-primary-900: #064030;
+  --theme-primary-800: #0a523f;
+  
+  --theme-accent-50: #fefce8;
+  --theme-accent-100: #fef9c3;
+  --theme-accent-200: #fef08a;
+  --theme-accent-300: #fde047;
+  --theme-accent-400: #facc15;
+  --theme-accent-500: #eab308;
+  --theme-accent-600: #ca8a04;
+  --theme-accent-700: #a16207;
+  --theme-accent-800: #854d0e;
+  --theme-accent-900: #713f12;
+}
+
+/* 2. Royal Sapphire & Gold */
+[data-theme="sapphire"] {
+  --theme-primary-950: #040d21;
+  --theme-primary-900: #0c1e4a;
+  --theme-primary-800: #142c69;
+  
+  --theme-accent-50: #fffbeb;
+  --theme-accent-100: #fef3c7;
+  --theme-accent-200: #fde68a;
+  --theme-accent-300: #fcd34d;
+  --theme-accent-400: #fbbf24;
+  --theme-accent-500: #f59e0b;
+  --theme-accent-600: #d97706;
+  --theme-accent-700: #b45309;
+  --theme-accent-800: #92400e;
+  --theme-accent-900: #78350f;
+}
+
+/* 3. Burgundy Chateau & Rose Gold */
+[data-theme="burgundy"] {
+  --theme-primary-950: #1a040b;
+  --theme-primary-900: #3d071b;
+  --theme-primary-800: #570b28;
+  
+  --theme-accent-50: #fff1f2;
+  --theme-accent-100: #ffe4e6;
+  --theme-accent-200: #fecdd3;
+  --theme-accent-300: #fda4af;
+  --theme-accent-400: #fb7185;
+  --theme-accent-500: #f43f5e;
+  --theme-accent-600: #e11d48;
+  --theme-accent-700: #be123c;
+  --theme-accent-800: #9f1239;
+  --theme-accent-900: #881337;
+}
+
+/* 4. Warm Espresso & Copper Bronze */
+[data-theme="bronze"] {
+  --theme-primary-950: #120e0c;
+  --theme-primary-900: #291c16;
+  --theme-primary-800: #3d2a21;
+  
+  --theme-accent-50: #fff7ed;
+  --theme-accent-100: #ffedd5;
+  --theme-accent-200: #fed7aa;
+  --theme-accent-300: #fdba74;
+  --theme-accent-400: #fb923c;
+  --theme-accent-500: #f97316;
+  --theme-accent-600: #ea580c;
+  --theme-accent-700: #c2410c;
+  --theme-accent-800: #9a3412;
+  --theme-accent-900: #7c2d12;
+}
+
+/* 5. Classic Navy & Amber */
+[data-theme="navy"] {
+  --theme-primary-950: #020617;
+  --theme-primary-900: #0f172a;
+  --theme-primary-800: #1e293b;
+  
+  --theme-accent-50: #fffbeb;
+  --theme-accent-100: #fef3c7;
+  --theme-accent-200: #fde68a;
+  --theme-accent-300: #fcd34d;
+  --theme-accent-400: #fbbf24;
+  --theme-accent-500: #d97706;
+  --theme-accent-600: #b45309;
+  --theme-accent-700: #92400e;
+  --theme-accent-800: #78350f;
+  --theme-accent-900: #451a03;
+}
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
