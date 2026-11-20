@@ -132,6 +132,7 @@ export const authService = {
         budget_range: profile.budget_range || '$1M - $3M',
         agent_id: profile.agent_id || null,
         customer_id: profile.customer_id || null,
+        owner_id: profile.owner_id || null,
       };
 
       localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(authenticatedUser));
@@ -210,6 +211,7 @@ export const authService = {
       address: profile.address || '',
       budget_range: profile.budget_range || '',
       customer_id: profile.customer_id || null,
+        owner_id: profile.owner_id || null,
     };
 
     localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(registeredUser));
@@ -295,6 +297,7 @@ export const authService = {
         budget_range: profile.budget_range || '$1M - $3M',
         agent_id: profile.agent_id || null,
         customer_id: profile.customer_id || null,
+        owner_id: profile.owner_id || null,
       };
 
       localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(refreshedUser));
@@ -348,6 +351,7 @@ export const authService = {
     }
   },
 };
+
 
 
 

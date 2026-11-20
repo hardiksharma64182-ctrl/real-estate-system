@@ -1,6 +1,6 @@
-import React from 'react';
+﻿import React from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import { AppProvider, useApp } from './context/AppContext';
+import { AppProvider } from './context/AppContext';
 import { Navbar } from './components/common/Navbar';
 import { Footer } from './components/common/Footer';
 import { ToastContainer } from './components/common/Toast';
@@ -9,7 +9,6 @@ import { SupabaseSettingsModal } from './components/common/SupabaseSettingsModal
 import { MyBookingsModal } from './components/bookings/MyBookingsModal';
 import { BookingModal } from './components/bookings/BookingModal';
 
-// Public Pages
 import { HomePage } from './components/home/HomePage';
 import { PropertiesPage } from './components/properties/PropertiesPage';
 import { OwnersPage } from './components/owners/OwnersPage';
@@ -17,42 +16,39 @@ import { AgentsPage } from './components/agents/AgentsPage';
 import { CustomersPage } from './components/customers/CustomersPage';
 import { BookingsPage } from './components/bookings/BookingsPage';
 
-// Three Separate Premium Login Pages
 import { AdminLoginPage } from './components/auth/AdminLoginPage';
-import { AgentLoginPage } from './components/auth/AgentLoginPage';
 import { CustomerLoginPage } from './components/auth/CustomerLoginPage';
+import { OwnerLoginPage } from './components/auth/OwnerLoginPage';
 
-// Role-Protected Dashboards & Route Guard
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { AdminDashboard } from './components/admin/AdminDashboard';
-import { AgentDashboard } from './components/agent/AgentDashboard';
 import { CustomerDashboard } from './components/customer/CustomerDashboard';
+import { OwnerDashboard } from './components/owner/OwnerDashboard';
 
 const AppRoutes = () => {
   const location = useLocation();
 
-  // Hide global navbar/footer on dedicated login pages and fullscreen admin console
-  const isAuthPage =
-    location.pathname === '/admin/login' ||
-    location.pathname === '/agent/login' ||
-    location.pathname === '/customer/login';
+  const isAuthPage = [
+    '/admin/login',
+    '/owner/login',
+    '/buyer/login'
+  ].includes(location.pathname);
 
-  const isAdminDashboard = location.pathname.startsWith('/admin') && location.pathname !== '/admin/login';
-  const isAgentDashboard = location.pathname.startsWith('/agent/dashboard');
-  const isCustomerDashboard = location.pathname.startsWith('/customer/dashboard');
+  const isFullscreenDashboard =
+    location.pathname.startsWith('/admin') ||
+    location.pathname.startsWith('/owner/dashboard') ||
+    location.pathname.startsWith('/buyer/dashboard');
 
-  const showNavbar = !isAuthPage;
-  const showFooter = !isAuthPage && !isAdminDashboard && !isAgentDashboard && !isCustomerDashboard;
+  const showNavbar = !isAuthPage && !isFullscreenDashboard;
+  const showFooter = !isAuthPage && !isFullscreenDashboard;
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 selection:bg-amber-500 selection:text-white">
-      {/* Navigation Bar */}
       {showNavbar && <Navbar />}
 
-      {/* Main Content View with Routes */}
       <main className="flex-1">
         <Routes>
-          {/* Public Website Routes */}
+          {/* Public Website */}
           <Route path="/" element={<HomePage />} />
           <Route path="/properties" element={<PropertiesPage />} />
           <Route path="/owners" element={<OwnersPage />} />
@@ -60,17 +56,12 @@ const AppRoutes = () => {
           <Route path="/customers" element={<CustomersPage />} />
           <Route path="/bookings" element={<BookingsPage />} />
 
-          {/* 1. Admin Login – /admin/login */}
+          {/* Login Portals */}
           <Route path="/admin/login" element={<AdminLoginPage />} />
+          <Route path="/owner/login" element={<OwnerLoginPage />} />
+          <Route path="/buyer/login" element={<CustomerLoginPage />} />
 
-          {/* 2. Agent Login – /agent/login */}
-          <Route path="/agent/login" element={<AgentLoginPage />} />
-
-          {/* 3. Customer Login – /customer/login */}
-          <Route path="/customer/login" element={<CustomerLoginPage />} />
-
-          {/* Protected Role-Based Dashboards */}
-          {/* Admin Dashboard: Full Management Permissions */}
+          {/* Admin Portal */}
           <Route
             path="/admin/*"
             element={
@@ -79,28 +70,20 @@ const AppRoutes = () => {
               </ProtectedRoute>
             }
           />
+
+          {/* Owner Portal */}
           <Route
-            path="/admin"
+            path="/owner/dashboard"
             element={
-              <ProtectedRoute allowedRoles={['admin']}>
-                <AdminDashboard />
+              <ProtectedRoute allowedRoles={['owner']}>
+                <OwnerDashboard />
               </ProtectedRoute>
             }
           />
 
-          {/* Agent Dashboard: Only assigned properties and bookings */}
+          {/* Buyer Portal - database role remains customer */}
           <Route
-            path="/agent/dashboard"
-            element={
-              <ProtectedRoute allowedRoles={['agent']}>
-                <AgentDashboard />
-              </ProtectedRoute>
-            }
-          />
-
-          {/* Customer Dashboard: Only own profile, favourites, and bookings */}
-          <Route
-            path="/customer/dashboard"
+            path="/buyer/dashboard"
             element={
               <ProtectedRoute allowedRoles={['customer']}>
                 <CustomerDashboard />
@@ -108,19 +91,16 @@ const AppRoutes = () => {
             }
           />
 
-          {/* Fallback to Home */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
 
-      {/* Global Modals & Notifications */}
       <BookingModal />
       <AuthModal />
       <SupabaseSettingsModal />
       <MyBookingsModal />
       <ToastContainer />
 
-      {/* Footer on Public Showcase */}
       {showFooter && <Footer />}
     </div>
   );
