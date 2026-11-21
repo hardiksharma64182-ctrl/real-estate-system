@@ -23,7 +23,6 @@ export const AdminSidebar = ({ activeSection, onSelectSection }) => {
     { id: 'overview', label: 'Dashboard Overview', icon: LayoutDashboard },
     { id: 'properties', label: 'Properties Catalog', icon: Building },
     { id: 'owners', label: 'Owners Management', icon: Users },
-    { id: 'agents', label: 'Agents & Brokers', icon: Shield },
     { id: 'customers', label: 'Customers & CRM', icon: UserCheck },
     { id: 'bookings', label: 'Tour Bookings', icon: Calendar, badge: pendingCount > 0 ? pendingCount : null },
   ];

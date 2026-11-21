@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
 import { AdminSidebar } from './AdminSidebar';
 import { PropertiesPage } from '../properties/PropertiesPage';
@@ -224,21 +224,6 @@ export const AdminDashboard = () => {
             </span>
             <div className="text-2xl font-black text-slate-900 mt-1">{totalOwners}</div>
             <span className="text-[11px] text-slate-500 mt-0.5 block">Registered Owners</span>
-          </div>
-
-          {/* 3. Total Agents */}
-          <div
-            onClick={() => setAdminSection('agents')}
-            className="p-5 rounded-3xl bg-white border border-slate-200/80 shadow-xs hover:shadow-md transition-all cursor-pointer group"
-          >
-            <div className="w-9 h-9 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-              <Shield className="w-5 h-5" />
-            </div>
-            <span className="text-[10px] uppercase font-bold tracking-wider text-slate-400 block">
-              Total Agents
-            </span>
-            <div className="text-2xl font-black text-slate-900 mt-1">{totalAgents}</div>
-            <span className="text-[11px] text-purple-700 font-semibold mt-0.5 block">Registered Agents</span>
           </div>
 
           {/* 4. Total Customers */}
