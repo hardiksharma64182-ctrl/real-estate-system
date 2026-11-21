@@ -67,16 +67,16 @@ export const Navbar = () => {
   ];
 
   const getDashboardPath = () => {
-    if (!currentUser) return '/customer/login';
+    if (!currentUser) return '/buyer/login';
     if (currentUser.role === 'admin') return '/admin';
-    if (currentUser.role === 'agent') return '/agent/dashboard';
-    return '/customer/dashboard';
+    if (currentUser.role === 'owner') return '/owner/dashboard';
+    return '/buyer/dashboard';
   };
 
   const getDashboardLabel = () => {
     if (!currentUser) return 'Sign In';
     if (currentUser.role === 'admin') return 'Admin Dashboard';
-    if (currentUser.role === 'agent') return 'Agent Workspace';
+    if (currentUser.role === 'owner') return 'Agent Workspace';
     return 'Client Lounge';
   };
 
@@ -137,7 +137,7 @@ export const Navbar = () => {
                 className="ml-2 px-3.5 py-2 text-xs font-bold rounded-lg bg-slate-900 text-amber-400 hover:text-amber-300 shadow-xs flex items-center gap-1.5"
               >
                 {currentUser.role === 'admin' && <Shield className="w-3.5 h-3.5 text-amber-400" />}
-                {currentUser.role === 'agent' && <Briefcase className="w-3.5 h-3.5 text-emerald-400" />}
+                {currentUser.role === 'owner' && <Briefcase className="w-3.5 h-3.5 text-emerald-400" />}
                 {currentUser.role === 'customer' && <Key className="w-3.5 h-3.5 text-amber-400" />}
                 <span>{getDashboardLabel()}</span>
               </Link>
@@ -170,7 +170,7 @@ export const Navbar = () => {
             <button
               onClick={() => {
                 if (currentUser?.role === 'customer') {
-                  navigate('/customer/dashboard');
+                  navigate('/buyer/dashboard');
                 } else {
                   setMyBookingsModalOpen(true);
                 }
@@ -239,21 +239,21 @@ export const Navbar = () => {
                           onClick={() => setUserDropdownOpen(false)}
                           className="block text-slate-600 hover:text-amber-600 font-medium"
                         >
-                          • Admin Login (/admin/login)
+                          Ã¢â‚¬Â¢ Admin Login (/admin/login)
                         </Link>
                         <Link
-                          to="/agent/login"
+                          to="/owner/login"
                           onClick={() => setUserDropdownOpen(false)}
                           className="block text-slate-600 hover:text-amber-600 font-medium"
                         >
-                          • Agent Login (/agent/login)
+                          Ã¢â‚¬Â¢ Owner Login (/owner/login)
                         </Link>
                         <Link
-                          to="/customer/login"
+                          to="/buyer/login"
                           onClick={() => setUserDropdownOpen(false)}
                           className="block text-slate-600 hover:text-amber-600 font-medium"
                         >
-                          • Customer Login (/customer/login)
+                          Ã¢â‚¬Â¢ Buyer Login (/buyer/login)
                         </Link>
                       </div>
                     </div>
@@ -310,7 +310,7 @@ export const Navbar = () => {
                     </Link>
 
                     <Link
-                      to="/agent/login"
+                      to="/owner/login"
                       onClick={() => setLoginMenuOpen(false)}
                       className="p-3 hover:bg-slate-50 flex items-start gap-3 transition-colors group"
                     >
@@ -319,14 +319,14 @@ export const Navbar = () => {
                       </div>
                       <div>
                         <p className="text-xs font-bold text-slate-900 group-hover:text-emerald-700">
-                          Agent Login
+                          Owner Login
                         </p>
-                        <p className="text-[10px] text-slate-400">/agent/login</p>
+                        <p className="text-[10px] text-slate-400">/owner/login</p>
                       </div>
                     </Link>
 
                     <Link
-                      to="/customer/login"
+                      to="/buyer/login"
                       onClick={() => setLoginMenuOpen(false)}
                       className="p-3 hover:bg-slate-50 flex items-start gap-3 transition-colors group"
                     >
@@ -335,9 +335,9 @@ export const Navbar = () => {
                       </div>
                       <div>
                         <p className="text-xs font-bold text-slate-900 group-hover:text-amber-700">
-                          Customer Login
+                          Buyer Login
                         </p>
-                        <p className="text-[10px] text-slate-400">/customer/login</p>
+                        <p className="text-[10px] text-slate-400">/buyer/login</p>
                       </div>
                     </Link>
                   </div>
@@ -406,21 +406,21 @@ export const Navbar = () => {
                 onClick={() => setMobileMenuOpen(false)}
                 className="block py-2 px-3 bg-slate-50 rounded-xl text-xs font-bold text-slate-900 hover:bg-slate-100"
               >
-                🛡️ Admin Login (/admin/login)
+                Ã°Å¸â€ºÂ¡Ã¯Â¸Â Admin Login (/admin/login)
               </Link>
               <Link
-                to="/agent/login"
+                to="/owner/login"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block py-2 px-3 bg-slate-50 rounded-xl text-xs font-bold text-slate-900 hover:bg-slate-100"
               >
-                💼 Agent Login (/agent/login)
+                Ã°Å¸â€™Â¼ Owner Login (/owner/login)
               </Link>
               <Link
-                to="/customer/login"
+                to="/buyer/login"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block py-2 px-3 bg-slate-50 rounded-xl text-xs font-bold text-slate-900 hover:bg-slate-100"
               >
-                🔑 Customer Login (/customer/login)
+                Ã°Å¸â€â€˜ Buyer Login (/buyer/login)
               </Link>
             </div>
           )}
