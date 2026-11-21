@@ -57,7 +57,6 @@ export const Navbar = () => {
     { to: '/', label: 'Home' },
     { to: '/properties', label: 'Properties' },
     { to: '/owners', label: 'Owners' },
-    { to: '/agents', label: 'Agents' },
     { to: '/customers', label: 'Customers' },
     {
       to: '/bookings',
