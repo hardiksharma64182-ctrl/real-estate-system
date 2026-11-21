@@ -379,13 +379,6 @@ export const CustomerLoginPage = () => {
               >
                 Admin Command →
               </Link>
-              <span>•</span>
-              <Link
-                to="/agent/login"
-                className="text-amber-400 hover:text-amber-300 font-semibold"
-              >
-                Agent Portal →
-              </Link>
             </div>
           </div>
         </div>
