@@ -19,6 +19,7 @@ import { BookingsPage } from './components/bookings/BookingsPage';
 import { AdminLoginPage } from './components/auth/AdminLoginPage';
 import { CustomerLoginPage } from './components/auth/CustomerLoginPage';
 import { OwnerLoginPage } from './components/auth/OwnerLoginPage';
+import { ResetPasswordPage } from './components/auth/ResetPasswordPage';
 
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { AdminDashboard } from './components/admin/AdminDashboard';
@@ -31,7 +32,8 @@ const AppRoutes = () => {
   const isAuthPage = [
     '/admin/login',
     '/owner/login',
-    '/buyer/login'
+    '/buyer/login',
+    '/reset-password'
   ].includes(location.pathname);
 
   const isFullscreenDashboard =
@@ -60,6 +62,7 @@ const AppRoutes = () => {
           <Route path="/admin/login" element={<AdminLoginPage />} />
           <Route path="/owner/login" element={<OwnerLoginPage />} />
           <Route path="/buyer/login" element={<CustomerLoginPage />} />
+          <Route path="/reset-password" element={<ResetPasswordPage />} />
 
           {/* Admin Portal */}
           <Route
@@ -113,3 +116,4 @@ export default function App() {
     </AppProvider>
   );
 }
+

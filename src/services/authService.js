@@ -230,7 +230,7 @@ export const authService = {
     }
 
     const { error } = await supabase.auth.resetPasswordForEmail(cleanEmail, {
-      redirectTo: `${window.location.origin}/customer/login`,
+      redirectTo: `${window.location.origin}/reset-password`,
     });
 
     if (error) throw new Error(error.message);
@@ -245,6 +245,21 @@ export const authService = {
    * Always call refreshSessionFromSupabase() on app mount to verify the session
    * is still valid and re-fetch the latest role from the database.
    */
+  async updatePassword(newPassword) {
+    const supabase = getSupabaseClient();
+
+    if (!supabase) {
+      throw new Error('Supabase is not configured.');
+    }
+
+    const { error } = await supabase.auth.updateUser({
+      password: newPassword,
+    });
+
+    if (error) throw new Error(error.message);
+
+    return { success: true };
+  },
   getCurrentUser() {
     try {
       const raw = localStorage.getItem(CURRENT_USER_KEY);
@@ -351,6 +366,8 @@ export const authService = {
     }
   },
 };
+
+
 
 
 
