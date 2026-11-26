@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
 import { authService } from '../../services/authService';
@@ -188,7 +188,7 @@ export const OwnerLoginPage = () => {
               to="/buyer/login"
               className="text-emerald-400 hover:text-emerald-300 font-semibold"
             >
-              Buyer Login Portal →
+              Buyer Login Portal ?
             </Link>
             <p className="text-slate-500">
               Owner accounts are created by the administrator.
@@ -201,7 +201,7 @@ export const OwnerLoginPage = () => {
             to="/"
             className="text-xs text-slate-400 hover:text-white transition-colors"
           >
-            ← Return to LuxeEstate Public Showcase
+            ? Return to LuxeEstate Public Showcase
           </Link>
         </div>
       </div>

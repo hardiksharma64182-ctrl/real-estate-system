@@ -4,18 +4,18 @@ import {
   LayoutDashboard,
   Building,
   Users,
-  Shield,
   UserCheck,
   Calendar,
+  CreditCard,
+  Settings,
   Database,
-  Plus,
   Home,
   LogOut,
   Sparkles,
 } from 'lucide-react';
 
 export const AdminSidebar = ({ activeSection, onSelectSection }) => {
-  const { currentUser, setAuthModalOpen, logout, setActiveTab, setSupabaseModalOpen, bookings } = useApp();
+  const { currentUser, logout, setActiveTab, setSupabaseModalOpen, bookings } = useApp();
 
   const pendingCount = bookings.filter((b) => b.status === 'Pending').length;
 
@@ -23,8 +23,10 @@ export const AdminSidebar = ({ activeSection, onSelectSection }) => {
     { id: 'overview', label: 'Dashboard Overview', icon: LayoutDashboard },
     { id: 'properties', label: 'Properties Catalog', icon: Building },
     { id: 'owners', label: 'Owners Management', icon: Users },
-    { id: 'customers', label: 'Customers & CRM', icon: UserCheck },
+    { id: 'customers', label: 'Buyers & CRM', icon: UserCheck },
     { id: 'bookings', label: 'Tour Bookings', icon: Calendar, badge: pendingCount > 0 ? pendingCount : null },
+    { id: 'payments', label: 'Payments & Reports', icon: CreditCard },
+    { id: 'settings', label: 'Users & Settings', icon: Settings },
   ];
 
   return (

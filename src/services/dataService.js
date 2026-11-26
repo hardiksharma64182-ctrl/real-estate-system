@@ -243,6 +243,92 @@ export const dataService = {
     return deleteRow('bookings', id);
   },
 
+  // ===================== BUYER FAVORITES (SUPABASE RLS) =====================
+
+  async getOrCreateCustomerId(user) {
+    if (!user?.id && !user?.email) {
+      throw new Error('Authenticated buyer is required.');
+    }
+    if (user.customer_id) {
+      return user.customer_id;
+    }
+
+    const supabase = requireSupabase();
+
+    // Try finding existing customer row by user_id or email
+    let query = supabase.from('customers').select('id').limit(1);
+    if (user.id && user.email) {
+      query = query.or(`user_id.eq.${user.id},email.ilike.${user.email}`);
+    } else if (user.id) {
+      query = query.eq('user_id', user.id);
+    } else {
+      query = query.ilike('email', user.email);
+    }
+
+    const { data: existing, error: findErr } = await query.maybeSingle();
+    checkError(findErr);
+
+    if (existing?.id) {
+      return existing.id;
+    }
+
+    // Create customer row linked to this authenticated user (allowed by RLS)
+    const newCustomer = {
+      id: generateId('cust'),
+      user_id: user.id,
+      name: user.name || user.email.split('@')[0],
+      email: user.email,
+      phone: user.phone || 'Not provided',
+      address: user.address || '',
+      budget_range: user.budget_range || '$1M - $3M',
+      registration_date: new Date().toISOString().split('T')[0],
+      created_at: new Date().toISOString(),
+    };
+
+    const created = await insertRow('customers', newCustomer);
+    return created.id;
+  },
+
+  async getCustomerFavorites(user) {
+    const supabase = requireSupabase();
+    const customerId = await this.getOrCreateCustomerId(user);
+
+    const { data, error } = await supabase
+      .from('customer_favorites')
+      .select('property_id')
+      .eq('customer_id', customerId);
+
+    checkError(error);
+    return (data ?? []).map((row) => row.property_id);
+  },
+
+  async toggleCustomerFavorite(user, propertyId, isCurrentlyFavorite) {
+    const supabase = requireSupabase();
+    const customerId = await this.getOrCreateCustomerId(user);
+
+    if (isCurrentlyFavorite) {
+      const { error } = await supabase
+        .from('customer_favorites')
+        .delete()
+        .eq('customer_id', customerId)
+        .eq('property_id', propertyId);
+      checkError(error);
+    } else {
+      const { error } = await supabase
+        .from('customer_favorites')
+        .insert([
+          {
+            id: generateId('fav'),
+            customer_id: customerId,
+            property_id: propertyId,
+          },
+        ]);
+      checkError(error);
+    }
+
+    return this.getCustomerFavorites(user);
+  },
+
   // ===================== STORAGE / IMAGE UPLOAD =====================
 
   async uploadPropertyImage(file) {

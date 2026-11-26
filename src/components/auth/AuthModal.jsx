@@ -5,11 +5,11 @@ import { Lock, Mail, User, Phone, MapPin, DollarSign, X, Shield, Sparkles, Build
 export const AuthModal = () => {
   const { authModalOpen, setAuthModalOpen, login, register } = useApp();
   const [tab, setTab] = useState('login'); // 'login' | 'register'
-  const [role, setRole] = useState('admin'); // default for easy previewing
+  const [role, setRole] = useState('customer'); // default to customer
 
   // Login form
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('••••••••');
+  const [password, setPassword] = useState('');
 
   // Register form
   const [regData, setRegData] = useState({
@@ -144,15 +144,14 @@ export const AuthModal = () => {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-700 mb-1">Role Permission</label>
+                  <label className="block text-xs font-medium text-slate-700 mb-1">Role</label>
                   <select
                     value={role}
                     onChange={(e) => setRole(e.target.value)}
                     className="w-full px-3 py-2 text-sm rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all bg-white"
                   >
-                    <option value="admin">Admin (All privileges + Dashboard)</option>
-                    <option value="agent">Agent (Manage assigned listings & bookings)</option>
                     <option value="customer">Customer (Browse & schedule viewings)</option>
+                    <option value="agent">Agent (Manage assigned listings & bookings)</option>
                   </select>
                 </div>
 

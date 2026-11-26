@@ -33,8 +33,8 @@ export const CustomerLoginPage = () => {
   const [forgotModalOpen, setForgotModalOpen] = useState(false);
 
   // Login Form
-  const [loginEmail, setLoginEmail] = useState('j.reed@techcapital.io');
-  const [loginPassword, setLoginPassword] = useState('Customer@2026!');
+  const [loginEmail, setLoginEmail] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
 
   // Register Form
   const [regData, setRegData] = useState({
@@ -71,7 +71,7 @@ export const CustomerLoginPage = () => {
         message: `Welcome, ${authenticatedUser.name}. Your private portfolio and viewings are ready.`,
       });
 
-      const target = location.state?.from || '/customer/dashboard';
+      const target = location.state?.from || '/buyer/dashboard';
       navigate(target, { replace: true });
     } catch (err) {
       setError(err.message || 'Authentication failed. Please verify credentials.');
@@ -105,7 +105,7 @@ export const CustomerLoginPage = () => {
         message: `Welcome to LuxeEstate Private Lounge, ${registeredUser.name}.`,
       });
 
-      navigate('/customer/dashboard', { replace: true });
+      navigate('/buyer/dashboard', { replace: true });
     } catch (err) {
       setError(err.message || 'Registration failed. Please check your details.');
     } finally {
@@ -153,11 +153,11 @@ export const CustomerLoginPage = () => {
             <span>Private Client Sanctuary</span>
           </div>
           <h2 className="mt-3 text-2xl font-bold tracking-tight text-white">
-            {activeTab === 'login' ? 'Customer Lounge Login' : 'Register New Client Profile'}
+            {activeTab === 'login' ? 'Buyer Lounge Login' : 'Register New Client Profile'}
           </h2>
           <p className="mt-1 text-xs text-slate-400 max-w-sm mx-auto">
             {activeTab === 'login'
-              ? 'Access saved favourite properties, scheduled estate walkthroughs, and personal concierge briefs.'
+              ? 'Access your saved favourite properties, scheduled property visits, bookings, and personal profile.'
               : 'Create an exclusive account to book private viewings and curate custom luxury portfolios.'}
           </p>
 
@@ -215,7 +215,7 @@ export const CustomerLoginPage = () => {
                     type="email"
                     value={loginEmail}
                     onChange={(e) => setLoginEmail(e.target.value)}
-                    placeholder="j.reed@techcapital.io"
+                    placeholder="Enter your email"
                     className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all font-mono"
                     required
                   />

@@ -38,6 +38,7 @@ export const getSupabaseClient = () => {
       auth: {
         persistSession: true,
         autoRefreshToken: true,
+        detectSessionInUrl: true,
       },
     });
     lastUrl = supabaseUrl;

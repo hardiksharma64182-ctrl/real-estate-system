@@ -230,7 +230,7 @@ export const authService = {
     }
 
     const { error } = await supabase.auth.resetPasswordForEmail(cleanEmail, {
-      redirectTo: `${window.location.origin}/reset-password`,
+      redirectTo: 'https://real-estate-system-nine.vercel.app/reset-password',
     });
 
     if (error) throw new Error(error.message);

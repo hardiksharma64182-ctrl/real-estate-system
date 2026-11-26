@@ -1,6 +1,7 @@
-﻿import React from 'react';
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+﻿import React, { useEffect } from 'react';
+import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
+import { getSupabaseClient } from './services/supabaseClient';
 import { Navbar } from './components/common/Navbar';
 import { Footer } from './components/common/Footer';
 import { ToastContainer } from './components/common/Toast';
@@ -28,6 +29,32 @@ import { OwnerDashboard } from './components/owner/OwnerDashboard';
 
 const AppRoutes = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  // Detect Supabase password recovery links/events even if Supabase falls back to '/'
+  useEffect(() => {
+    const hasRecoveryParam =
+      location.hash.includes('type=recovery') ||
+      location.search.includes('type=recovery');
+
+    if (hasRecoveryParam && location.pathname !== '/reset-password') {
+      navigate(`/reset-password${location.search}${location.hash}`, { replace: true });
+      return;
+    }
+
+    const supabase = getSupabaseClient();
+    if (!supabase) return;
+
+    const { data: subscription } = supabase.auth.onAuthStateChange((event) => {
+      if (event === 'PASSWORD_RECOVERY' && location.pathname !== '/reset-password') {
+        navigate('/reset-password', { replace: true });
+      }
+    });
+
+    return () => {
+      subscription?.subscription?.unsubscribe();
+    };
+  }, [location.pathname, location.search, location.hash, navigate]);
 
   const isAuthPage = [
     '/admin/login',

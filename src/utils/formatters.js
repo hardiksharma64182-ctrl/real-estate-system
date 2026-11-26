@@ -48,6 +48,7 @@ export const getStatusBadgeColor = (status) => {
     case 'approved':
       return 'bg-emerald-50 text-emerald-700 border-emerald-200';
     case 'rejected':
+    case 'cancelled':
       return 'bg-rose-50 text-rose-700 border-rose-200';
     case 'completed':
       return 'bg-blue-50 text-blue-700 border-blue-200';

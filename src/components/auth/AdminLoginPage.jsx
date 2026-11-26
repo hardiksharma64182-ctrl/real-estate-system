@@ -194,7 +194,7 @@ export const AdminLoginPage = () => {
               </Link>
               <span>•</span>
               <Link
-                to="/customer/login"
+                to="/buyer/login"
                 className="text-amber-400 hover:text-amber-300 font-semibold"
               >
                 Customer Portal →
